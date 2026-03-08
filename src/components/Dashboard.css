@@ -1,0 +1,528 @@
+.police-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+
+.police-header {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  padding: 28px 20px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.police-header-top {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.police-title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.police-subtitle {
+  margin: 8px 0 0;
+  color: #dbeafe;
+  font-size: 15px;
+}
+
+.police-content {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 20px 30px;
+}
+
+.police-info-card,
+.police-success-card,
+.police-alert-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.police-info-card,
+.police-success-card {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.police-success-card {
+  color: #166534;
+  background: #ecfdf5;
+  border: 1px solid #86efac;
+}
+
+.police-alert-card {
+  border: 1px solid #e5e7eb;
+}
+
+.police-alert-top {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.police-severity-badge {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.police-severity-high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.police-severity-medium {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.police-severity-low {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.police-alert-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+.police-alert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.police-detail-box {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.police-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.police-value {
+  font-size: 15px;
+  color: #0f172a;
+  word-break: break-word;
+}
+
+.police-map-link {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.police-phone-link {
+  color: #0f172a;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.police-alert-actions {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.police-ok-btn {
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  min-width: 130px;
+}
+
+.police-ok-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.police-logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.police-logout-btn:hover,
+.police-ok-btn:hover {
+  opacity: 0.92;
+}
+
+@media (max-width: 768px) {
+  .police-title {
+    font-size: 28px;
+  }
+
+  .police-header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .police-alert-actions {
+    justify-content: stretch;
+  }
+
+  .police-ok-btn {
+    width: 100%;
+  }
+}
+
+.emergency-services{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.service-group{
+  background:#f7f7f7;
+  padding:12px;
+  border-radius:12px;
+}
+
+.service-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:8px 10px;
+  font-weight:600;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+
+.service-header.ambulance{
+  background:#22c55e;
+  color:white;
+}
+
+.service-header.police{
+  background:#e5e7eb;
+}
+
+.count{
+  background:white;
+  color:#22c55e;
+  padding:2px 8px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+.service-card{
+  background:white;
+  padding:10px;
+  border-radius:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+}
+
+.service-card p{
+  margin:0;
+  font-size:12px;
+  color:#666;
+}
+
+.distance{
+  background:#e5e7eb;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+/* Emergency Services Section */
+.emergency-services{
+  margin-top:25px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+/* Group container */
+.service-group{
+  background:#f9fafb;
+  padding:15px;
+  border-radius:14px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Header (Ambulance + Police titles) */
+.service-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 16px;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:14px;
+}
+
+/* Ambulance header */
+.service-header.ambulance{
+  background:#22c55e;
+  color:white;
+}
+
+/* Police header */
+.service-header.police{
+  background:#e5e7eb;
+  color:#111827;
+}
+
+/* Count badge */
+.count{
+  background:white;
+  color:#22c55e;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:600;
+}
+
+/* Service card */
+.service-card{
+  background:white;
+  padding:14px;
+  border-radius:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+  border:1px solid #e5e7eb;
+}
+
+/* Hospital name */
+.service-card strong{
+  font-size:15px;
+}
+
+/* Phone number */
+.service-card p{
+  margin:3px 0 0 0;
+  font-size:13px;
+  color:#6b7280;
+}
+
+/* Distance badge */
+.distance{
+  background:#111827;
+  color:white;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+/* ===== Hospital Header ===== */
+
+.hospital-header {
+  background: linear-gradient(135deg, #0f1f3d, #243b7a);
+  padding: 30px 40px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+}
+
+.hospital-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hospital-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hospital-subtitle {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-top: 5px;
+}
+
+/* Logout button */
+
+.hospital-logout-btn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hospital-logout-btn:hover {
+  background: #e63946;
+}
+
+/* ===== Dashboard Content ===== */
+
+.hospital-content {
+  padding: 30px 40px;
+}
+
+/* Loading card */
+
+.hospital-info-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+/* No alert card */
+
+.hospital-success-card {
+  background: #e6f7ed;
+  border: 1px solid #4ade80;
+  color: #065f46;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Alert severity card */
+
+.severity-card {
+  background: #fff5f5;
+  border: 1px solid #f87171;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+
+/* top alert row */
+
+.severity-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* severity badge */
+
+.severity-badge {
+  background: #ef4444;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* time badge */
+
+.time-badge {
+  background: #111827;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* alert rows */
+
+.severity-row {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.severity-row.small {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* bottom row */
+
+.severity-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* critical label */
+
+.critical-badge {
+  background: #dc2626;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* meta info */
+
+.alert-meta {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.alert-meta p {
+  margin: 4px 0;
+}
+
+/* OK button */
+
+.ok-button {
+  margin-top: 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ok-button:hover {
+  background: #1d4ed8;
+}

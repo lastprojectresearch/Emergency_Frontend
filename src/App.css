@@ -1,0 +1,28 @@
+.app {
+  min-height: 100vh;
+  background: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #e5e7eb;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-btn.active {
+  background: #1f2937;
+  color: white;
+}
